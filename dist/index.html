@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="#all">All</a></li>
+                    <li><a href="#today">Today</a></li>
+                    <li><a href="#tomorrow">Tomorrow</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div class="form-container">
+                <h1>Weather App</h1>
+                <form id="weather-form">
+                    <label for="latitude">Latitude:</label>
+                    <input type="text" id="latitude" name="latitude" placeholder="Enter latitude" required>
+                    <label for="longitude">Longitude:</label>
+                    <input type="text" id="longitude" name="longitude" placeholder="Enter longitude" required>
+                    <button type="submit">Get Weather</button>
+                </form>
+            </div>
+            <section id="weather-results">
+                <!-- Weather results will be displayed here -->
+            </section>
+        </main>
+        <footer>
+            <p>&copy; 2024 Weather App</p>
+        </footer>
+    </div>
+    <script src="scripts.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>
